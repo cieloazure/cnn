@@ -1,0 +1,33 @@
+model = Sequential()
+model.add(Conv2D(32, kernel_size=(5, 5), strides=(1, 1),
+                 activation='sigmoid',
+                 input_shape=input_shape))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+model.add(Conv2D(64, (5, 5), activation='sigmoid'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Flatten())
+model.add(Dense(1000, activation='sigmoid'))
+model.add(Dense(num_classes, activation='softmax'))
+
+Epoch 1/10
+ - 86s 1ms/step-loss:1.1710-acc: 0.5833-val_loss:0.2495-val_acc: 0.9218
+Epoch 2/10
+ - 82s 1ms/step-loss:0.1905-acc: 0.9404-val_loss:0.1154-val_acc: 0.9639
+Epoch 3/10
+ - 82s 1ms/step-loss:0.1111-acc: 0.9653-val_loss:0.0817-val_acc: 0.9756
+Epoch 4/10
+ - 82s 1ms/step-loss:0.0836-acc: 0.9737-val_loss:0.0722-val_acc: 0.9768
+Epoch 5/10
+ - 70s 1ms/step-loss:0.0664-acc: 0.9800-val_loss:0.0590-val_acc: 0.9809
+Epoch 6/10
+ - 66s 1ms/step-loss:0.0581-acc: 0.9818-val_loss:0.0513-val_acc: 0.9837
+Epoch 7/10
+ - 66s 1ms/step-loss:0.0489-acc: 0.9849-val_loss:0.0454-val_acc: 0.9855
+Epoch 8/10
+ - 66s 1ms/step-loss:0.0418-acc: 0.9870-val_loss:0.0699-val_acc: 0.9781
+Epoch 9/10
+ - 66s 1ms/step-loss:0.0385-acc: 0.9878-val_loss:0.0413-val_acc: 0.9858
+Epoch 10/10
+ - 66s 1ms/step-loss:0.0316-acc: 0.9898-val_loss:0.0425-val_acc: 0.9865
+Test loss: 0.04249820691049099
+Test accuracy: 0.9865

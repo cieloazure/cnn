@@ -1,0 +1,36 @@
+learning_rate = 0.001
+decay_rate = learning_rate / epochs
+model.compile(loss=keras.losses.categorical_crossentropy,
+              optimizer=keras.optimizers.Adam(lr=learning_rate, beta_1=0.9,
+                  beta_2=0.999, epsilon=None, decay=decay_rate, amsgrad=True),
+                metrics=['accuracy'])
+
+
+Using TensorFlow backend.
+x_train shape: (60000, 28, 28, 1)
+60000 train samples
+10000 test samples
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/10
+2018-11-18 15:48:12.783209: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+60000/60000 [==============================] - 72s 1ms/step - loss: 0.1433 - acc: 0.9565 - val_loss: 0.0424 - val_acc: 0.9865
+Epoch 2/10
+60000/60000 [==============================] - 73s 1ms/step - loss: 0.0401 - acc: 0.9872 - val_loss: 0.0378 - val_acc: 0.9878
+Epoch 3/10
+60000/60000 [==============================] - 77s 1ms/step - loss: 0.0249 - acc: 0.9920 - val_loss: 0.0208 - val_acc: 0.9927
+Epoch 4/10
+60000/60000 [==============================] - 74s 1ms/step - loss: 0.0175 - acc: 0.9946 - val_loss: 0.0246 - val_acc: 0.9909
+Epoch 5/10
+60000/60000 [==============================] - 74s 1ms/step - loss: 0.0122 - acc: 0.9961 - val_loss: 0.0285 - val_acc: 0.9903
+Epoch 6/10
+60000/60000 [==============================] - 76s 1ms/step - loss: 0.0082 - acc: 0.9976 - val_loss: 0.0286 - val_acc: 0.9916
+Epoch 7/10
+60000/60000 [==============================] - 78s 1ms/step - loss: 0.0057 - acc: 0.9983 - val_loss: 0.0260 - val_acc: 0.9927
+Epoch 8/10
+60000/60000 [==============================] - 81s 1ms/step - loss: 0.0042 - acc: 0.9988 - val_loss: 0.0304 - val_acc: 0.9924
+Epoch 9/10
+60000/60000 [==============================] - 80s 1ms/step - loss: 0.0027 - acc: 0.9993 - val_loss: 0.0278 - val_acc: 0.9926
+Epoch 10/10
+60000/60000 [==============================] - 78s 1ms/step - loss: 0.0017 - acc: 0.9996 - val_loss: 0.0308 - val_acc: 0.9922
+Test loss: 0.030768493364180746
+Test accuracy: 0.9922

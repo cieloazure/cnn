@@ -1,0 +1,28 @@
+Using TensorFlow backend.
+x_train shape: (60000, 28, 28, 1)
+60000 train samples
+10000 test samples
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/10
+2018-11-19 15:33:00.472663: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+60000/60000 [==============================] - 78s 1ms/step - loss: 0.1520 - acc: 0.9544 - val_loss: 0.0422 - val_acc: 0.9868
+Epoch 2/10
+60000/60000 [==============================] - 76s 1ms/step - loss: 0.0417 - acc: 0.9868 - val_loss: 0.0305 - val_acc: 0.9903
+Epoch 3/10
+60000/60000 [==============================] - 74s 1ms/step - loss: 0.0277 - acc: 0.9911 - val_loss: 0.0312 - val_acc: 0.9901
+Epoch 4/10
+60000/60000 [==============================] - 83s 1ms/step - loss: 0.0207 - acc: 0.9938 - val_loss: 0.0246 - val_acc: 0.9924
+Epoch 5/10
+60000/60000 [==============================] - 87s 1ms/step - loss: 0.0161 - acc: 0.9946 - val_loss: 0.0317 - val_acc: 0.9908
+Epoch 6/10
+60000/60000 [==============================] - 75s 1ms/step - loss: 0.0132 - acc: 0.9957 - val_loss: 0.0331 - val_acc: 0.9907
+Epoch 7/10
+60000/60000 [==============================] - 79s 1ms/step - loss: 0.0106 - acc: 0.9968 - val_loss: 0.0269 - val_acc: 0.9922
+Epoch 8/10
+60000/60000 [==============================] - 67s 1ms/step - loss: 0.0091 - acc: 0.9968 - val_loss: 0.0301 - val_acc: 0.9912
+Epoch 9/10
+60000/60000 [==============================] - 71s 1ms/step - loss: 0.0076 - acc: 0.9977 - val_loss: 0.0395 - val_acc: 0.9890
+Epoch 10/10
+60000/60000 [==============================] - 84s 1ms/step - loss: 0.0064 - acc: 0.9978 - val_loss: 0.0326 - val_acc: 0.9915
+Test loss: 0.03262355251086756
+Test accuracy: 0.9915

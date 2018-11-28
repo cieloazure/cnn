@@ -1,0 +1,39 @@
+model = Sequential()
+model.add(Conv2D(32, kernel_size=(5, 5), strides=(1, 1),
+                 activation='tanh',
+                 input_shape=input_shape))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+model.add(Conv2D(64, (5, 5), activation='tanh'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Flatten())
+model.add(Dense(1000, activation='tanh'))
+model.add(Dense(num_classes, activation='softmax'))
+
+Using TensorFlow backend.
+x_train shape: (60000, 28, 28, 1)
+60000 train samples
+10000 test samples
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/10
+2018-11-18 18:24:00.086463: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+60000/60000 [==============================] - 91s 2ms/step - loss: 0.1609 - acc: 0.9517 - val_loss: 0.0626 - val_acc: 0.9794
+Epoch 2/10
+60000/60000 [==============================] - 100s 2ms/step - loss: 0.0636 - acc: 0.9803 - val_loss: 0.0633 - val_acc: 0.9795
+Epoch 3/10
+60000/60000 [==============================] - 67s 1ms/step - loss: 0.0418 - acc: 0.9866 - val_loss: 0.0411 - val_acc: 0.9866
+Epoch 4/10
+60000/60000 [==============================] - 66s 1ms/step - loss: 0.0314 - acc: 0.9903 - val_loss: 0.0622 - val_acc: 0.9820
+Epoch 5/10
+60000/60000 [==============================] - 76s 1ms/step - loss: 0.0200 - acc: 0.9937 - val_loss: 0.0480 - val_acc: 0.9871
+Epoch 6/10
+60000/60000 [==============================] - 101s 2ms/step - loss: 0.0162 - acc: 0.9945 - val_loss: 0.0446 - val_acc: 0.9881
+Epoch 7/10
+60000/60000 [==============================] - 99s 2ms/step - loss: 0.0109 - acc: 0.9965 - val_loss: 0.0506 - val_acc: 0.9876
+Epoch 8/10
+60000/60000 [==============================] - 81s 1ms/step - loss: 0.0113 - acc: 0.9963 - val_loss: 0.0396 - val_acc: 0.9903
+Epoch 9/10
+60000/60000 [==============================] - 68s 1ms/step - loss: 0.0122 - acc: 0.9958 - val_loss: 0.0462 - val_acc: 0.9875
+Epoch 10/10
+60000/60000 [==============================] - 67s 1ms/step - loss: 0.0074 - acc: 0.9975 - val_loss: 0.0439 - val_acc: 0.9893
+Test loss: 0.04387625982418795
+Test accuracy: 0.9893

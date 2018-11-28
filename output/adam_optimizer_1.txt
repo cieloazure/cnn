@@ -1,0 +1,33 @@
+model.compile(loss=keras.losses.categorical_crossentropy,
+              optimizer=keras.optimizers.Adam(lr=0.001, beta_1=0.9,
+                  beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False),
+                metrics=['accuracy'])
+
+Using TensorFlow backend.
+x_train shape: (60000, 28, 28, 1)
+60000 train samples
+10000 test samples
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/10
+2018-11-18 15:02:09.611620: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+60000/60000 [==============================] - 80s 1ms/step - loss: 0.1497 - acc: 0.9539 - val_loss: 0.0559 - val_acc: 0.9814
+Epoch 2/10
+60000/60000 [==============================] - 77s 1ms/step - loss: 0.0431 - acc: 0.9864 - val_loss: 0.0315 - val_acc: 0.9889
+Epoch 3/10
+60000/60000 [==============================] - 72s 1ms/step - loss: 0.0275 - acc: 0.9915 - val_loss: 0.0280 - val_acc: 0.9915
+Epoch 4/10
+60000/60000 [==============================] - 87s 1ms/step - loss: 0.0201 - acc: 0.9935 - val_loss: 0.0275 - val_acc: 0.9914
+Epoch 5/10
+60000/60000 [==============================] - 79s 1ms/step - loss: 0.0159 - acc: 0.9947 - val_loss: 0.0357 - val_acc: 0.9891
+Epoch 6/10
+60000/60000 [==============================] - 82s 1ms/step - loss: 0.0131 - acc: 0.9958 - val_loss: 0.0273 - val_acc: 0.9920
+Epoch 7/10
+60000/60000 [==============================] - 109s 2ms/step - loss: 0.0108 - acc: 0.9964 - val_loss: 0.0355 - val_acc: 0.9894
+Epoch 8/10
+60000/60000 [==============================] - 153s 3ms/step - loss: 0.0089 - acc: 0.9972 - val_loss: 0.0232 - val_acc: 0.9934
+Epoch 9/10
+60000/60000 [==============================] - 123s 2ms/step - loss: 0.0071 - acc: 0.9977 - val_loss: 0.0248 - val_acc: 0.9927
+Epoch 10/10
+60000/60000 [==============================] - 121s 2ms/step - loss: 0.0079 - acc: 0.9975 - val_loss: 0.0344 - val_acc: 0.9913
+Test loss: 0.034409510155550785
+Test accuracy: 0.9913

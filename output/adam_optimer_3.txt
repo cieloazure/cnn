@@ -1,0 +1,34 @@
+model.compile(loss=keras.losses.categorical_crossentropy,
+              optimizer=keras.optimizers.Adam(lr=learning_rate, beta_1=0.9,
+                  beta_2=0.999, epsilon=0.5, decay=decay_rate, amsgrad=True),
+                metrics=['accuracy'])
+
+
+Using TensorFlow backend.
+x_train shape: (60000, 28, 28, 1)
+60000 train samples
+10000 test samples
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/10
+2018-11-18 15:33:01.786364: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+60000/60000 [==============================] - 112s 2ms/step - loss: 2.2905 - acc: 0.1550 - val_loss: 2.2632 - val_acc: 0.3389
+Epoch 2/10
+60000/60000 [==============================] - 73s 1ms/step - loss: 2.2101 - acc: 0.4503 - val_loss: 2.1217 - val_acc: 0.5798
+Epoch 3/10
+60000/60000 [==============================] - 83s 1ms/step - loss: 1.8393 - acc: 0.6793 - val_loss: 1.3546 - val_acc: 0.7775
+Epoch 4/10
+60000/60000 [==============================] - 75s 1ms/step - loss: 0.9046 - acc: 0.8194 - val_loss: 0.5912 - val_acc: 0.8613
+Epoch 5/10
+60000/60000 [==============================] - 73s 1ms/step - loss: 0.5155 - acc: 0.8669 - val_loss: 0.4198 - val_acc: 0.8882
+Epoch 6/10
+60000/60000 [==============================] - 72s 1ms/step - loss: 0.4083 - acc: 0.8876 - val_loss: 0.3534 - val_acc: 0.9030
+Epoch 7/10
+60000/60000 [==============================] - 76s 1ms/step - loss: 0.3567 - acc: 0.8981 - val_loss: 0.3152 - val_acc: 0.9110
+Epoch 8/10
+60000/60000 [==============================] - 73s 1ms/step - loss: 0.3237 - acc: 0.9071 - val_loss: 0.2912 - val_acc: 0.9162
+Epoch 9/10
+60000/60000 [==============================] - 82s 1ms/step - loss: 0.2998 - acc: 0.9131 - val_loss: 0.2684 - val_acc: 0.9226
+Epoch 10/10
+60000/60000 [==============================] - 81s 1ms/step - loss: 0.2800 - acc: 0.9184 - val_loss: 0.2516 - val_acc: 0.9281
+Test loss: 0.2515755773246288
+Test accuracy: 0.9281

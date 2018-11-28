@@ -1,0 +1,22 @@
+Epoch 1/10
+ - 161s 3ms/step-loss:2.1792-acc: 0.4002-val_loss:1.9456-val_acc: 0.7196
+Epoch 2/10
+ - 132s 2ms/step-loss:1.3192-acc: 0.7850-val_loss:0.7034-val_acc: 0.8570
+Epoch 3/10
+ - 122s 2ms/step-loss:0.5497-acc: 0.8671-val_loss:0.4172-val_acc: 0.8900
+Epoch 4/10
+ - 87s 1ms/step-loss:0.3968-acc: 0.8925-val_loss:0.3392-val_acc: 0.9047
+Epoch 5/10
+ - 65s 1ms/step-loss:0.3382-acc: 0.9043-val_loss:0.2989-val_acc: 0.9148
+Epoch 6/10
+ - 67s 1ms/step-loss:0.3039-acc: 0.9126-val_loss:0.2692-val_acc: 0.9211
+Epoch 7/10
+ - 65s 1ms/step-loss:0.2784-acc: 0.9190-val_loss:0.2494-val_acc: 0.9268
+Epoch 8/10
+ - 66s 1ms/step-loss:0.2594-acc: 0.9242-val_loss:0.2324-val_acc: 0.9326
+Epoch 9/10
+ - 66s 1ms/step-loss:0.2436-acc: 0.9286-val_loss:0.2186-val_acc: 0.9364
+Epoch 10/10
+ - 81s 1ms/step-loss:0.2304-acc: 0.9332-val_loss:0.2071-val_acc: 0.9402
+Test loss: 0.2070874872416258
+Test accuracy: 0.9402
